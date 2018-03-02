@@ -10,9 +10,16 @@ class App extends Component {
     return (
       <div className='App'>
         <header>
-          <nav>
-            <Link to='/'>Landing</Link>
-            <Link to='/library'>Library</Link>
+          <nav className='Nav-bar'>
+            <span className='landingNav'>
+             <Link to='/' className='landingLink'>HOME</Link>
+            </span>
+            <span className='libraryNav'>
+              <Link to='/library' className='libraryLink'>LIBRARY</Link>
+            </span>
+            <span className='logoNav'>
+              <img src='./public/assets/images/bloc_jams_logo.png' alt='Bloc Jams Logo'/>
+            </span>
           </nav>
           <h1>Bloc Jams</h1>
         </header>

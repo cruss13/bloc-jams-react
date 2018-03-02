@@ -1,28 +1,56 @@
 .App {
+  background-color: black;
+  color: #41FF00
+}
+
+.Nav-bar {
+  background-color: #A9A9A9;
+  height: 50px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.landingNav {
+padding-left: 40px;
+}
+
+.libraryNav {
+  padding-left: 40px;
+}
+
+.logoNav {
+  padding-left: 850px;
+}
+
+.landingLink {
+  color: black;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.libraryLink {
+  color: black;
+  font-size: 20px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+  background-color: black;
 }
 
-.App-header {
-  background-color: #222;
+.title {
+  text-align: center;
+}
+
+.point {
+  float: left;
   height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  width: 425px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
 }
