@@ -5,7 +5,7 @@ const Landing = () => (
 
     <div className="title">
       <h1 className="hero-title">Turn the music up!</h1>
-      <img src="./public/assets/images/Boombox_photo.jpg" alt="Boombox photo" />
+      <img class="img-responsive" className="Boombox_photo" src="./../../assets/images/Boombox_photo.jpg" alt="Boombox photo" />
     </div>
 
     <section className="sellingPoints">

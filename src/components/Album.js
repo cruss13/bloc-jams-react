@@ -114,46 +114,53 @@ class Album extends Component {
   render () {
     return (
       <section className="album">
-        <section id="album-info">
-          <img id="album-cover-art" src={this.state.album.albumCover} alt='album cover'/>
-          <div className="album-details">
-            <h1 id="album-title">{this.state.album.title}</h1>
-            <h2 className="artist">{this.state.album.artist}</h2>
-            <div id="release-info">{this.state.album.releaseInfo}</div>
-          </div>
-        </section>
-        <table id="song-list">
-          <colgroup>
-            <col id="song-number-column" />
-            <col id="song-title-column" />
-            <col id="song-duration-column" />
-          </colgroup>
-          <tbody className="song-table">
-          {
-            this.state.album.songs.map ( (song, index) =>
-              <tr className="song" key={index} onClick={() => this.handleSongClick(song)}
-                onMouseEnter={() => this.setState({ isHovered: index + 1 })}
-                onMouseLeave={() => this.setState({ isHovered: false})}
-              >
-                <td className="song-actions">
-                  <button id="hover-buttons">
-                  { (this.state.currentSong.title === song.title) ?
-                  <span className={this.state.isPlaying ? "ion-pause" : "ion-play"}></span>
-                  :
-                  (this.state.isHovered === index + 1) ?
-                  <span className="ion-play"></span>
-                  :
-                  <span className="song-number">{index + 1}</span>
+        <div>
+          <span className="albumInfo2">
+            <img id="album-cover-art" src={this.state.album.albumCover} alt='album cover'/>
+            <div className="album-details">
+              <h2 id="album-title">{this.state.album.title}</h2>
+              <h3 className="artist">{this.state.album.artist}</h3>
+              <div id="release-info">{this.state.album.releaseInfo}</div>
+            </div>
+          </span>
+          <span>
+            <table id="song-list">
+              <colgroup>
+                <col id="song-number-column" />
+                <col id="song-title-column" />
+                <col id="song-duration-column" />
+              </colgroup>
+              <tbody className="song-table">
+                {
+                  this.state.album.songs.map ( (song, index) =>
+                    <tr className="song" key={index} onClick={() => this.handleSongClick(song)}
+                      onMouseEnter={() => this.setState({ isHovered: index + 1 })}
+                      onMouseLeave={() => this.setState({ isHovered: false})}
+                    >
+                    <td className="song-actions">
+                      <button id="hover-buttons">
+                      { (this.state.currentSong.title === song.title) ?
+                      <span className={this.state.isPlaying ? "ion-pause" : "ion-play"}></span>
+                      :
+                      (   this.state.isHovered === index + 1) ?
+                      <span className="ion-play"></span>
+                      :
+                      <span className="song-number">{index + 1}</span>
+                      }
+                      </button>
+                    </td>
+                    <td className="song-title">{song.title}</td>
+                    <td className="song-duration">{this.formatTime(song.duration)}</td>
+                    </tr>
+                  )
                 }
-                  </button>
-                </td>
-                <td className="song-title">{song.title}</td>
-                <td className="song-duration">{this.formatTime(song.duration)}</td>
-              </tr>
-            )
-          }
-          </tbody>
-        </table>
+              </tbody>
+            </table>
+            </span>
+          </div>
+
+        <span>
+        <div className="PlayerBar">
         <PlayerBar
           isPlaying={this.state.isPlaying}
           currentSong={this.state.currentSong}
@@ -167,6 +174,8 @@ class Album extends Component {
           formatTime={(e) => this.formatTime(e)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
         />
+        </div>
+        </span>
       </section>
     );
   }
