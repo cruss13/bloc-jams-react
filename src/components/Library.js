@@ -18,7 +18,9 @@ class Library extends Component {
 
 
               <Link to={`/album/${album.slug}`} key={index}>
-                <div className="albumDetails">
+                <div className="albumLibrary" class="container-fluid">
+                <div class="row">
+                <div class="column">
                   <span className="albumCovers" >
                     <img className="albumPhoto" src={album.albumCover} alt={album.title} />
                   </span>
@@ -27,6 +29,8 @@ class Library extends Component {
                     <div className="infoLink2">{album.artist}</div>
                     <div className="infoLink2">{album.songs.length} songs</div>
                   </span>
+                  </div>
+                  </div>
                 </div>
               </Link>
 
