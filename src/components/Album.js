@@ -156,8 +156,8 @@ class Album extends Component {
                 }
               </tbody>
             </table>
-            </span>
-          </div>
+          </span>
+        </div>
 
         <span>
         <div className="PlayerBar">

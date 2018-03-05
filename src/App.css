@@ -33,11 +33,17 @@ h1 {
   font-size: 500%;
 }
 
-.hero-title {
-  font-size: 700%;
+.title-text {
   position: absolute;
-  padding: 42% 0% 0% 27%;
+  margin-left: 22.5%;
+  margin-top: 41%;
+  width: 60%;
+  height: 20%;
+}
+
+.hero-title {
   color: white;
+  font-size: 8vw;
 }
 
 body {
@@ -55,18 +61,19 @@ body {
   border-radius: 3%;
 }
 
-.point {
+.pointSections {
   float: left;
-  height: 150px;
-  width: 425px;
   text-align: center;
+  width: 325px;
+  margin-left: 6%;
   font-family: 'Orbitron', sans-serif;
   font-size: 100%;
   padding-top: 1%;
+  padding-bottom: 8%;
 }
 
 .albumPhoto {
-  width: 22%;
+  width: 22.5vw;
   height: auto;
   float: left;
   padding-left: 5%;
@@ -74,9 +81,10 @@ body {
 
 .albumInfo {
   float: left;
+  width: 325px;
   padding-left: 2%;
   padding-top: 2%;
-  padding-bottom: 5%
+  padding-bottom: 13%;
 }
 
 .infoLink1 {
@@ -105,7 +113,7 @@ body {
 .album-details {
   color: #41FF00;
   font-family: 'Orbitron', sans-serif;
-  text-align: center
+  text-align: center;
 }
 
 #album-title {
@@ -126,17 +134,17 @@ body {
 
 .song-table {
   float: left;
-  padding: 10% 0% 0% 1%;
+  padding: 37.5px 0px 0px 10px;;
+  width: 325px;
+  margin-left: 10%;
 }
 
 .albumInfo2 {
   float: left;
-  margin-left: 7%;
-  margin-top: 1%;
 }
 
 .song-title {
-  padding: 2% 75% 2% 2%;
+  padding: 2% 50% 2% 2%;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -147,7 +155,12 @@ body {
 .PlayerBar {
   float: left;
   text-align: center;
-  width: 25%;
-  padding: 6% 0% 0% 4%;
+  width: 325px;
+  padding: 75px 0px 0px 0px;
+  font-family: 'Orbitron', sans-serif;
+  margin-left: 5%;
+}
+
+#hover-buttons {
   font-family: 'Orbitron', sans-serif;
 }
