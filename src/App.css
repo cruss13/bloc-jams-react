@@ -80,11 +80,6 @@ body {
   padding-left: 5%;
 }
 
-.albumLibrary {
-  float: right;
-  background: red;
-}
-
 .albumInfo {
   float: left;
   width: 300px;
