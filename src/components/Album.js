@@ -114,7 +114,7 @@ class Album extends Component {
   render () {
     return (
       <section className="album">
-        <div>
+        <div className="albumDiv">
           <span className="albumInfo2">
             <img id="album-cover-art" src={this.state.album.albumCover} alt='album cover'/>
             <div className="album-details">

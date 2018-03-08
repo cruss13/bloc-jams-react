@@ -6,23 +6,23 @@
 .Nav-bar {
   background-color: #A9A9A9;
   height: auto;
-  padding: 2% 0% 2% 4%;
+  padding: 2% 0% 2% 5%;
   text-align: left;
 }
 
 .libraryNav {
-  padding-left: 3%;
+  padding-left: 5%;
 }
 
 .landingLink {
   color: black;
-  font-size: 150%;
+  font-size: 2vmax;
   font-family: 'Press Start 2P', sans-serif;
 }
 
 .libraryLink {
   color: black;
-  font-size: 150%;
+  font-size: 2vmax;
   font-family: 'Press Start 2P', sans-serif;
 }
 
@@ -30,7 +30,7 @@ h1 {
   font-family: 'Mr Dafoe', cursive;
   text-align: center;
   color: #ff0099;
-  font-size: 500%;
+  font-size: 13vmin;
 }
 
 .title-text {
@@ -62,14 +62,25 @@ body {
 }
 
 .pointSections {
-  float: left;
   text-align: center;
-  width: 325px;
-  margin-left: 6%;
+  width: 300px;
   font-family: 'Orbitron', sans-serif;
-  font-size: 100%;
   padding-top: 1%;
   padding-bottom: 8%;
+}
+
+.point-title {
+  font-size: 30px;
+}
+
+.point-description {
+  font-size: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 
 .albumPhoto {
@@ -102,6 +113,11 @@ body {
   font-family: 'Orbitron', sans-serif;
 }
 
+.albumDiv {
+  background: pink;
+  width: 50%;
+}
+
 #album-cover-art {
   display: block;
   height: 50%;
@@ -114,6 +130,7 @@ body {
   color: #41FF00;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
+  background: blue;
 }
 
 #album-title {
@@ -137,6 +154,7 @@ body {
   padding: 37.5px 0px 0px 10px;;
   width: 325px;
   margin-left: 10%;
+  background: green;
 }
 
 .albumInfo2 {
@@ -159,6 +177,7 @@ body {
   padding: 75px 0px 0px 0px;
   font-family: 'Orbitron', sans-serif;
   margin-left: 5%;
+  background: red;
 }
 
 #hover-buttons {

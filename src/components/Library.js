@@ -11,7 +11,7 @@ class Library extends Component {
   render () {
     return (
       <section className="library">
-
+        <div className="fluid-container">
           {
 
             this.state.albums.map( (album, index) =>
@@ -32,7 +32,7 @@ class Library extends Component {
 
             )
           }
-
+        </div>
       </section>
     );
   }
