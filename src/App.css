@@ -114,8 +114,17 @@ body {
 }
 
 .albumDiv {
-  background: pink;
-  width: 50%;
+  float: left;
+  width: 300;
+  margin-left: 10%;
+  background: white;
+}
+
+.albumDiv2 {
+  margin-right: 20%;
+  width: 300;
+  float: right;
+  background: red;
 }
 
 #album-cover-art {
@@ -130,7 +139,6 @@ body {
   color: #41FF00;
   font-family: 'Orbitron', sans-serif;
   text-align: center;
-  background: blue;
 }
 
 #album-title {
@@ -150,11 +158,9 @@ body {
 }
 
 .song-table {
-  float: left;
-  padding: 37.5px 0px 0px 10px;;
-  width: 325px;
-  margin-left: 10%;
-  background: green;
+  display: block;
+  padding-top: 37.5px;
+  width: 300px;
 }
 
 .albumInfo2 {
@@ -162,7 +168,7 @@ body {
 }
 
 .song-title {
-  padding: 2% 50% 2% 2%;
+  padding: 2% 55% 2% 2%;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -171,13 +177,11 @@ body {
 }
 
 .PlayerBar {
-  float: left;
+  display: block;
   text-align: center;
-  width: 325px;
-  padding: 75px 0px 0px 0px;
+  width: 300px;
+  padding-top: 20%;
   font-family: 'Orbitron', sans-serif;
-  margin-left: 5%;
-  background: red;
 }
 
 #hover-buttons {

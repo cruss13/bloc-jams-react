@@ -123,6 +123,8 @@ class Album extends Component {
               <div id="release-info">{this.state.album.releaseInfo}</div>
             </div>
           </span>
+        </div>
+        <div className="albumDiv2">
           <span>
             <table id="song-list">
               <colgroup>
@@ -157,7 +159,7 @@ class Album extends Component {
               </tbody>
             </table>
           </span>
-        </div>
+
 
         <span>
         <div className="PlayerBar">
@@ -176,6 +178,7 @@ class Album extends Component {
         />
         </div>
         </span>
+      </div>
       </section>
     );
   }
