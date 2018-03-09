@@ -83,10 +83,14 @@ body {
   justify-content: space-around;
 }
 
-<!--This is the start of this section-->
-
 .allLibrary {
+  margin-left: 0%;
+}
 
+.linkDiv {
+  display: inline-block;
+  text-align: center;
+  margin-left: 5%;
 }
 
 .albumPhoto {
@@ -102,9 +106,7 @@ body {
   text-align: center;
   margin-bottom: 3%;
   font-family: 'Orbitron', sans-serif;
-
   width: 42.5vmax;
-  background: blue;
 }
 
 .infoLink2 {
@@ -113,11 +115,7 @@ body {
   text-align: center;
   font-family: 'Orbitron', sans-serif;
   width: 42.5vmax;
-  background: green;
 }
-
-
-<!--This is the end of this section-->
 
 .albumDiv {
   float: left;
