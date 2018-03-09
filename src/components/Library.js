@@ -11,25 +11,16 @@ class Library extends Component {
   render () {
     return (
       <section className="library">
-        <div className="fluid-container">
+        <div className="allLibrary">
           {
 
             this.state.albums.map( (album, index) =>
-
-
               <Link to={`/album/${album.slug}`} key={index}>
-                <div className="albumDetails">
-                  <span className="albumCovers" >
                     <img className="albumPhoto" src={album.albumCover} alt={album.title} />
-                  </span>
-                  <span className="albumInfo">
                     <div className="infoLink1">{album.title}</div>
                     <div className="infoLink2">{album.artist}</div>
                     <div className="infoLink2">{album.songs.length} songs</div>
-                  </span>
-                </div>
               </Link>
-
             )
           }
         </div>

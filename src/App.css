@@ -83,18 +83,26 @@ body {
   justify-content: space-around;
 }
 
+<!--This is the start of this section-->
+
+.allLibrary {
+  background: white;
+  height: 500px;
+  float: right;
+  width: 100%;
+}
+
+.library {
+  background: yellow;
+  width: 100%;
+}
+
 .albumPhoto {
   width: 22.5vw;
   height: auto;
   float: left;
   padding-left: 5%;
-}
-
-.albumInfo {
-  float: left;
-  padding-left: 2%;
-  padding-top: 2%;
-  padding-bottom: 13%;
+  background: purple;
 }
 
 .infoLink1 {
@@ -103,18 +111,26 @@ body {
   font-style: italic;
   margin-bottom: 3%;
   font-family: 'Orbitron', sans-serif;
+  width: 40%;
+  background: blue;
 }
 
 .infoLink2 {
   color: #41FF00;
   font-size: 150%;
+  width: 40%;
   margin-bottom: -2%;
   font-family: 'Orbitron', sans-serif;
+  background: green;
 }
+
+
+<!--This is the end of this section-->
 
 .albumDiv {
   float: left;
   padding-bottom: 50px;
+  display: flex;
 }
 
 .albumDiv2 {
@@ -149,11 +165,12 @@ body {
 
 #release-info {
   font-size: 150%;
+  padding-bottom: 10%;
 }
 
 .song-table {
-  width: 400px;
-  padding-top: 15%;
+  width: 50px;
+  height: 700px;
 }
 
 .albumInfo2 {
