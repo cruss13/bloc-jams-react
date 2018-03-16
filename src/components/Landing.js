@@ -7,7 +7,7 @@ const Landing = () => (
       <div className="title-text">
         <h1 className="hero-title">Turn the music up!</h1>
       </div>
-      <img class="img-responsive" className="Boombox_photo" src="./../../assets/images/Boombox_photo.jpg" alt="Boombox" />
+      <img className="Boombox_photo" src="./../../assets/images/Boombox_photo.jpg" alt="Boombox" />
     </div>
 
     <section className="flex-container">
